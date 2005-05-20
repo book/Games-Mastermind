@@ -1,0 +1,13 @@
+^Games-Mastermind-
+^mess
+^cover_db
+/?CVS/
+/?.svn/
+^.cvsignore
+\.bak$
+\.swp$
+\.SKIP$
+^_build
+^Build$
+^blib
+pm_to_blib

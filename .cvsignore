@@ -1,0 +1,15 @@
+blib*
+Makefile
+Makefile.old
+Build
+_build*
+pm_to_blib*
+*.tar.gz
+.lwpcookies
+Games-Mastermind-*
+cover_db
+mess
+MANIFEST
+Makefile.PL
+META.yml
+*.swp
