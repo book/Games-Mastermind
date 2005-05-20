@@ -32,6 +32,8 @@ for my $attr (qw( pegs holes code history )) {
     };
 }
 
+sub turn { scalar @{$_[0]->history}; }
+
 sub reset {
     my $self = shift;
     my $pegs = $self->pegs;
@@ -139,6 +141,10 @@ The winning combination is C<[ 4, 0 ]>.
 =item reset()
 
 Start a new game: clear the history and compute a new code.
+
+=item turn()
+
+Return the move number. C<0> if the game hasn't started yet.
 
 =back
 
