@@ -2,6 +2,7 @@ use Test::More;
 use Games::Mastermind;
 
 my @tests = (
+    # all combinaisons
     [ [qw( A B C D )], [qw(E E E E)], [ 0, 0 ] ],
     [ [qw( A B C D )], [qw(E F D F)], [ 0, 1 ] ],
     [ [qw( A B C D )], [qw(E C B E)], [ 0, 2 ] ],
@@ -16,6 +17,10 @@ my @tests = (
     [ [qw( A B C D )], [qw(A D C B)], [ 2, 2 ] ],
     [ [qw( A B C D )], [qw(A B E D)], [ 3, 0 ] ],
     [ [qw( A B C D )], [qw(A B C D)], [ 4, 0 ] ],
+
+    # other tests
+    [ [qw( A B C D )], [qw(C D E F)], [ 0, 2 ] ],
+    [ [qw( B A B B )], [qw(A B B B)], [ 2, 2 ] ],
 );
 plan tests => 2 * @tests + 1;
 
