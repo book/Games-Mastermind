@@ -90,10 +90,10 @@ Games::Mastermind - A simple framework for MasterMind games
 
 =head1 SYNOPSIS
 
-    use Game::Mastermind;
+    use Games::Mastermind;
 
     # the classic game
-    $mm = Game::Mastermind->new;
+    $mm = Games::Mastermind->new;
 
     # make a guess
     $marks = $game->play(qw( Y C W R ));
