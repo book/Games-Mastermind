@@ -99,15 +99,14 @@ Games::Mastermind - A simple framework for MasterMind games
     $marks = $game->play(qw( Y C W R ));
 
     # results
-    print "You lose!\n" unless defined $marks;
-    print "You win!\n" if $marks->[0] == $mm->holes;
+    print "You win!\n" if $marks->[0] == $mm->holes();
 
     # the game history is available at all times
-    $history   = $mm->history;
-    $last_turn = $mm->history->[-1];
+    $history   = $mm->history();
+    $last_turn = $mm->history()->[-1];
 
     # reset the game
-    $mm->reset;
+    $mm->reset();
 
 =head1 DESCRIPTION
 
@@ -122,7 +121,7 @@ The Games::Mastermind class provides the following methods:
 
 =item new( %args )
 
-Constructor. Valid parameters are C<pegs>, an reference to the list
+Constructor. Valid parameters are C<pegs>, a reference to the list
 of available pegs and C<holes>, the number of holes in the game.
 
 The default game is the original Mastermind:
@@ -136,7 +135,7 @@ Give the answer to C<@guess> as a reference to an array of two numbers:
 the number of black marks (right colour in the right position) and
 the number of white marks (right colour in the wrong position).
 
-The winning combination is C<[ 4, 0 ]>.
+The winning combination is C<[ $mm->holes(), 0 ]>.
 
 =item reset()
 
@@ -160,11 +159,11 @@ The list of pegs (as a reference to a list of strings).
 
 =item holes()
 
-Number of holes.
+The number of holes.
 
 =item history()
 
-Return a reference to the game history, as an array of guess, answer
+Return a reference to the game history, as an array of [ guess, answer ]
 arrays.
 
 =item code()
@@ -183,15 +182,17 @@ This section describes how to interface the game with a player.
 Once the game is created, for each turn, it is given a guess
 and returns the outcome of this turn.
 
+This example script show a very dumb player program:
+
     use Games::Mastermind;
     
-    my $game  = Games::Mastermind->new;    # standard game
-    my $holes = $game->holes;
-    my @pegs  = @{ $game->pegs };
-    
+    my $game  = Games::Mastermind->new();    # standard game
+    my $holes = $game->holes();
+    my @pegs  = @{ $game->pegs() };
+
     # simply play at random
     my $result = [ 0, 0 ];
-    while ( defined $result && $result->[0] != $holes ) {
+    while ( $result->[0] != $holes ) {
         $result =
           $game->play( my @guess = map { $pegs[ rand @pegs ] } 1 .. $holes );
         print "@guess | @$result\n";
@@ -220,7 +221,7 @@ check out what the black markers meant.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2005 Philippe "BooK" Bruhat, All Rights Reserved.
+Copyright 2005-2006 Philippe "BooK" Bruhat, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
