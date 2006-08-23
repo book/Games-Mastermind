@@ -1,5 +1,12 @@
 Revision history for Games-Mastermind
 
+0.02 Wed Aug 23 14:40:31 CEST 2006
+        [DOCUMENTATION]
+        - doc patch by Mike Castle (also reported as RT ticket #21149
+          by David Rigaudiere)
+        [TICKET CLOSED]
+        - #21149: Game::Mastermind in pod (lack of S for Games)
+
 0.01 Fri May 20 13:59:28 CEST 2005
         - First version, with enough to handle a game
 
