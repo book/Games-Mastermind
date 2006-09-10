@@ -1,5 +1,10 @@
 Revision history for Games-Mastermind
 
+0.03 Sun Sep 10 23:17:33 CEST 2006
+        [EXAMPLES]
+        - added some examples in eg/ (mostly to get that last Kwalitee
+          point, but check out the eg/mm-table.pl script)
+
 0.02 Wed Aug 23 14:40:31 CEST 2006
         [DOCUMENTATION]
         - doc patch by Mike Castle (also reported as RT ticket #21149
