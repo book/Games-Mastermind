@@ -135,7 +135,7 @@ Give the answer to C<@guess> as a reference to an array of two numbers:
 the number of black marks (right colour in the right position) and
 the number of white marks (right colour in the wrong position).
 
-The winning combination is C<[ $mm->holes(), 0 ]>.
+The winning combination is C<< [ $mm->holes(), 0 ] >>.
 
 =item reset()
 
