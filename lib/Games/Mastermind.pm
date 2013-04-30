@@ -84,6 +84,8 @@ sub play {
 
 __END__
 
+=encoding iso-8859-1
+
 =head1 NAME
 
 Games::Mastermind - A simple framework for MasterMind games
