@@ -206,7 +206,7 @@ be handled by the controlling program.
 
 =head1 AUTHOR
 
-Philippe "BooK" Bruhat, C<< <book@cpan.org> >>
+Philippe Bruhat (BooK), C<< <book@cpan.org> >>
 
 =head1 BUGS
 
@@ -221,9 +221,11 @@ your bug as I make changes.
 Sébastien Aperghis-Tramoni opened his old Super Mastermind game to
 check out what the black markers meant.
 
-=head1 COPYRIGHT & LICENSE
+=head1 COPYRIGHT
 
-Copyright 2005-2006 Philippe "BooK" Bruhat, All Rights Reserved.
+Copyright 2005-2013 Philippe Bruhat (BooK), All Rights Reserved.
+
+=head1 LICENSE
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
