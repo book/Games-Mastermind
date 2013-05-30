@@ -165,7 +165,7 @@ The number of holes.
 
 =item history()
 
-Return a reference to the game history, as an array of [ guess, answer ]
+Return a reference to the game history, as an array of C<[ guess, answer ]>
 arrays.
 
 =item code()
