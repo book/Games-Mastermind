@@ -62,7 +62,7 @@ sub play {
     # white marks
     @guess = sort grep defined, @guess;
     @code  = sort grep defined, @code;
-    while( @guess && @code ) { 
+    while( @guess && @code ) {
         if( $guess[0] eq $code[0] ) {
             $marks->[1]++;
             shift @guess;
@@ -187,7 +187,7 @@ and returns the outcome of this turn.
 This example script show a very dumb player program:
 
     use Games::Mastermind;
-    
+
     my $game  = Games::Mastermind->new();    # standard game
     my $holes = $game->holes();
     my @pegs  = @{ $game->pegs() };
