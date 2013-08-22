@@ -1,5 +1,11 @@
 Revision history for Games-Mastermind
 
+{{NEXT}}
+        [DOCUMENTATION]
+        - fixed various minor POD issues (including RT #51736)
+        [PACKAGING]
+        - switch to Dist::Zilla for maintaining the distribution
+
 0.03 Sun Sep 10 23:17:33 CEST 2006
         [EXAMPLES]
         - added some examples in eg/ (mostly to get that last Kwalitee
