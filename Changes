@@ -1,6 +1,12 @@
 Revision history for Games-Mastermind
 
-{{NEXT}}
+{{$NEXT}}
+
+0.06 Thu Aug 22 2013
+        [DOCUMENTATION]
+        - finally learnt how to setup the Changes files for dzil
+
+0.05 Thu Aug 22 2013
         [DOCUMENTATION]
         - fixed the Changes file, which got borked during the
           release process
