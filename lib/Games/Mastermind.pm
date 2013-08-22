@@ -4,8 +4,6 @@ use warnings;
 use strict;
 use Carp;
 
-our $VERSION = '0.03';
-
 sub new {
     my $class = shift;
     my $self  = bless {
@@ -84,11 +82,7 @@ sub play {
 
 __END__
 
-=encoding iso-8859-1
-
-=head1 NAME
-
-Games::Mastermind - A simple framework for MasterMind games
+# ABSTRACT: A simple framework for Mastermind games
 
 =head1 SYNOPSIS
 
@@ -204,10 +198,6 @@ The flow of control is in the hand of the player program or object,
 which asks the game if the guess was good. The count of turns must
 be handled by the controlling program.
 
-=head1 AUTHOR
-
-Philippe "BooK" Bruhat, C<< <book@cpan.org> >>
-
 =head1 BUGS
 
 Please report any bugs or feature requests to
@@ -221,12 +211,13 @@ your bug as I make changes.
 Sébastien Aperghis-Tramoni opened his old Super Mastermind game to
 check out what the black markers meant.
 
-=head1 COPYRIGHT & LICENSE
+=head1 COPYRIGHT
 
-Copyright 2005-2006 Philippe "BooK" Bruhat, All Rights Reserved.
+Copyright 2005-2013 Philippe Bruhat (BooK), All Rights Reserved.
+
+=head1 LICENSE
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
 =cut
-
